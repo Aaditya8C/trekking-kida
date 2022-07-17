@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Single Page App Using HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    
+    <style>
+        .heads{
+            font-size: 30px;
+            color: black;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+        }
+        .container{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .photos2{
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            position: relative;
+            top: -40px;
+        }
+       
+        
+        
+    </style>
+
+
+  </head>
+  <body>
+        <main id="main">
+            <script src="logic.js"></script>
+
+            <div class="main">
+                <div class="navbar">
+                    <title>Trekking Friend</title>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Forts</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#" onclick="reload()">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                                Locations
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Forts</a>
+                                <a class="dropdown-item" href="https://ajpadte.wordpress.com/">Alibag</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" onclick="document.getElementById('contact').scrollIntoView();">Contact</a>
+                            </li>
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0">
+                            <script>
+                                let a = document.getElementById('ch1').value;
+                                let x = document.getElementById('ch1')
+                                let b = document.getElementById('ch2');
+                                let c = document.getElementById('ch3');
+                                let d = document.getElementById('ch4');
+                                let e = document.getElementById('ch5');
+                                let f = document.getElementById('search').value;
+                                function sc1(){
+                                    for(i = 0;i < x.length;i++)
+                                    {
+                                        if(x[i].innerHTML.toLowerCase().includes(f))
+                                        {
+                                            x.scrollIntoView();
+                                        }
+                                    }
+                                }
+                                
+                            </script>
+                            <input id="search" class="form-control mr-sm-2" style="margin-left: 520px;" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="sc1()">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                </div>
+                
+    
+                <div id="heading" class="container" style="border: solid 6px green;">
+                    <h1 id="title" class="container"> Best 5 Forts to visit in Maharashtra</h1>
+                    <marquee scrollamount="16" class="font">There are different forts in Maharashtra. But here we have listed top five forts to visit!!</marquee>
+                </div>
+    
+                
+               
+        
+                <div id="contents" class="container">
+                    <h2 id="heading" class="heads">Table of Contents:</h2>
+                </div>
+        
+        
+        
+               <div id="table" class="conatiner">
+                    <button id="c1" class="btn btn-danger" onclick="document.getElementById('actual1').scrollIntoView();"> 1.1 List of best 5 forts  </button><br><br>
+                    <button id="c2" class="btn btn-dark" onclick="document.getElementById('actual2').scrollIntoView();"> 1.2 Information about each fort  </button><br><br>
+                    <button id="c3" class="btn btn-success" onclick="document.getElementById('actual3').scrollIntoView();"> 1.3 Images of each fort  </button><br><br>
+                    <button id="c4" class="btn btn-warning" onclick="document.getElementById('actual4').scrollIntoView();"> 1.4 How to reach?  </button><br><br>
+                    <button id="c5" class="btn btn-info" onclick="document.getElementById('actual5').scrollIntoView();"> 1.5 Best time to visit?  </button><br><br>
+        
+               </div>
+        
+        
+        
+               <div id="actual1" class="container">
+                <h2 id="ah1" class="heads" style="margin-top:20px;">1.1 List of best 5 forts in Maharashtra</h2>
+                <h3 id="bh1" class="font">Sinhgad Fort</h3>
+                <h3 id="bh2" class="font">Raigad Fort</h3>
+                <h3 id="bh3" class="font">Rajgad Fort</h3>
+                <h3 id="bh4" class="font">Rajmachi Fort</h3>
+                <h3 id="bh5" class="font">Harihar Fort</h3>
+        
+               </div><br><br><br>
+        
+        
+        
+        
+               <div id="actual2" class="container">
+                <h2 id="ah2" class="heads">1.2 Information about each fort</h2>
+                <h3 id="ch1" class="font">Sinhagad Fort</h3>
+                <p id="p1.1" class="font">
+                    Known to be the pride of the southwestern region of Pune, Sinhagad Fort is the first entrée to the list of forts in Maharashtra. 
+                    During the ancient battles, the Sinhagad Fort served as one of the supports to Maharashtra, amongst which, the Battle of Sinhagad in 1671 is one of the most significant ones. 
+                    Elevated at 1312 metres above sea level, the Bhuleshwar range of the Sahyadris houses this historical monument.
+                    With breakneck slopes that protect the fort from all the sides, there are two entrances to enter the fort 
+                    one is located in the north-east region and named as Pune Darwaza and the second one is located in the southeastern part and is known as the Kalyan Darwaza.
+                </p>
+                <p id="p1.2" class="font"> Visitors can experience the authenticity and regal quotient of the Sinhagad fort that is almost around 1000 years old. 
+                    This famous fort in Maharashtra houses a Kaundinya Eshwar Temple and the intricate carvings on the walls of the temple make the fine craftsmanship evident. 
+                    The Sinhagad Fort offers a breathtakingly spectacular view of the Khadakwasla Dam on one side and Torna Fort on the other.
+                </p>
+        
+                
+                <h3 id="ch2" class="font">Raigad Fort</h3>
+                <p id="p2.1" class="font">
+                    Raigad is a hill fort situated in Mahad, Raigad district of Maharashtra, India. It is one of the strongest fortresses on the Deccan Plateau.
+                    Many constructions and structures on Raigad were built by Shivaji Maharaj and Chief Engineer was Hirojee Indulkar.
+                    When Shivaji made it his capital in 1674 upon being crowned the king of the Maratha kingdom, which later developed into the Maratha Empire, eventually covering much of western and central India.
+                </p>
+                <p id="p2.2" class="font">
+                    The fort rises 820 metres (2,700 ft) above sea level in the Sahyadri mountain range. 
+                    There are approximately 1,737 steps leading to the fort. 
+                    The Raigad Ropeway, an aerial tramway, reaches 400 meters in height and 750 meters in length, and allows visitors to reach the fort from the ground in only four minutes.
+                </p>
+                
+        
+                <h3 id="ch3" class="font">Rajgad Fort</h3>
+                <p id="p3.1" class="font">
+                    Located yet again in Pune, the Rajgad Fort was previously known as Murudev. 
+                    This fort was the capital of the Maratha Empire for 26 years when Chhatrapati Shivaji Maharaj was ruling the empire. 
+                    What is more interesting about the Rajgad Fort is that the fort was constructed from the treasures of the Torna Fort. 
+                    Perched at a height of 1,376 metres above the sea level, this is one of the highest forts in Maharashtra, and the ruins of this fort consist of caves, palaces, and water cisterns, to name some. 
+                    The Rajgad Fort is constructed on a hill named Mumbadevi Dongar, which means the mountain of the Goddess Murumba.
+                </p>
+                <p id="p3.2" class="font">
+                    The fort takes pride in standing at such a scenic location and is said that Chhatrapati Shivaji Maharaj was hosted here for the highest numbers of days. 
+                    The history attached to this fort is both interesting and disheartening. 
+                    Interesting because, the birth of Rajaram Chhatrapati, the son of his Chhatrapati Shivaji Maharaj was witnessed here, and disheartening because, the fort is the deathbed of Chhatrapati Shivaji Maharaj’s queen, Saibai. 
+                    Amongst all the forts in Maharashtra, the Rajgad Fort is quite a famous monsoon trekking destination and trekkers, as well as other visitors, prefer to spend the night in the fort itself as it is huge and cannot be explored in just a few hours. 
+                    There is a temple at the top of the fort that is known as the Temple of Padmavati, which serves as the lodging place for the trekkers.
+                </p>
+        
+        
+                <h3 id="ch4" class="font">Rajmachi Fort</h3>
+                <p id="p4.1" class="font">
+                    Rajmachi Fort (Killa) is one of the many historical forts in the rugged hills of Sahyadri mountains (Western Ghats).
+                    It consists of two twin fortresses Shriwardhan and Manaranjan, with a wide machi (plateau) surrounding the two Balekillas. 
+                    Udhewadi is a small village of about 60 households (as per 2011 census report) situated on the machi, at the southern foot of Manaranjan Balekilla of Rajmachi Fort.
+                    The fort played a strategic role in the First Anglo-Maratha War.
+                    Rajmachi Fort has been declared as a protected monument.
+                </p>
+                
+        
+                <h3 id="ch5" class="font">Harihar Fort</h3>
+                <p id="p5.1" class="font">
+                    Harihar fort is located in the Nashik district of Maharashtra. It lies at an altitude of 3,676 ft from sea level. 
+                    The hill on which the fort is built looks like a rectangular shape from the base village. But it is built on the triangular prism of rock from the Yadava dynasty. The edges of the Harihar fort are almost vertical. 
+                    The attraction of Harihar fort is the iconic steps to the top of the fort. It is almost 80 degrees vertically inclined. 
+                    There are Lord Hanuman, Shiva and Nandi idols and a small pond at the fort. 
+                    The view from the fort is beautiful. You can see many forts and peaks such as Bhaskargad or Basgad, Anjaneri fort, Brahmagiri and Utwad fort from the top.
+                </p>
+               </div>
+               <br><br>
+        
+    
+    
+        
+               <div id="actual3" class="container">
+               <h2 id="ah3" class="heads">1.3 Images of each fort</h2>
+               <h3 id="dh1" class="font" style="text-align: center;margin-top:50px;">Sinhagad Fort</h3>
+                <img class="photos" src="sinh1.jpg">
+                <!-- <img class="photos" src="sinh2.jpg"> -->
+                <img class="photos" src="sinh3.jpg">
+        
+        
+               <h3 id="dh2" class="font" style="text-align: center;margin-top:50px;">Raigad Fort</h3>
+                <img class="photos" src="raig1.jpg">
+                <!-- <img class="photos" src="raig2.jpg"> -->
+                <img class="photos" src="raig3.jpg">
+        
+        
+                <h3 id="dh3" class="font" style="text-align: center;margin-top:50px;">Rajgad Fort</h3>
+                <img class="photos" src="rajgad1.jpg">
+                <img class="photos" src="rajgad2.jpg">
+        
+        
+                <h3 id="dh4" class="font" style="text-align: center;margin-top:50px;">Rajmachi Fort</h3>
+                <img class="photos" src="Rajmachi1.jpg">
+                <img class="photos" src="Rajmachi2.jpg">
+                <!-- <img class="photos" src="Rajmachi3.jpg"> -->
+        
+        
+                <h3 id="dh5" class="font" style="text-align: center;margin-top:50px;">Harihar Fort</h3>
+                <img class="photos" src="harihar1.jpg">
+                <img class="photos" src="harihar2.jpg">
+                <!-- <img class="photos" src="harihar3.jpg"> -->
+               </div>
+               <br><br>
+        
+        
+        
+               <div id="actual4" class="container">
+                <h2 id="ah4" class="heads">1.4 How to reach?</h2>
+                <h3 id="eh1" class="font">How to reach Sinhagad?</h3>
+                
+                <p class="font">
+                    Pune Airport is the nearest airport to the Sinhagad fortress. 
+                    Once you get down, you can either travel via state-run or private buses or opt for private cab service to drive you to the Sinhagad fortress. 
+                    Here are some other alternatives before you.
+                </p>
+                <ul>
+                    <li>
+                        <p class="font">
+                            By rail: Pune Railway Station is the nearest of all the stations to get to the Sinhagad Fort. 
+                            From here, you can either opt for a private cab service or choose for local bus transport to take you to the fort. 
+                        </p>
+                    </li> 
+                    <li>
+                        <p class="font">
+                            By road: Your journey from Pune to Sinhagad will be for an hour and 15 minutes. 
+                            You can opt for a private cab service or Uber cab service or Ola to drive you between the two points. 
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font">
+                            By bus: Plenty of bus services are there to drive you between these two points. 
+                            You need to visit the Pune Bus Stand to find the buses to prefer.
+                        </p>
+                    </li>
+        
+                </ul>
+                
+               
+        
+        
+                <h3 id="eh2" class="font">How to reach Raigad?</h3>
+        
+                <ul>
+        
+                    <li>
+                        <p class="font">
+                            By Train: Vis Dasgaon is the nearest railway station to the fort, which is connected to the major cities of Maharashtra. 
+                            It is linked with cities like New Delhi, Bangalore, Mysore, Jamnagar, Chennai, etc., in the country.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font">
+                            By Road: One of the best ways to reach Raigad is by road. 
+                            The town is well connected by roads and there are regular buses that operate from major cities to Raigad. 
+                            The total driving distance from Mumbai to Raigad is around 169 km.
+                        </p>
+                    </li>
+                </ul>
+                
+               
+        
+        
+                <h3 id="eh3" class="font">How to reach Rajgad?</h3>
+        
+                <p class="font">
+                    Rajgad trek has multiple routes as there are many entrances to this fort. 
+                    However, 3 trails are very famous and easily accessible. they are:
+                    <ul>
+                        <li>
+                            Gunjavane village route: via Chor Darwaza
+                        </li>
+                        <li>
+                            Pali village route: via Pali Darwaza
+                        </li>
+                        <li>
+                            Torna fort to Rajgad (Velhe village): via Alu Darwaza
+                        </li>
+                    </ul>
+                    All the villages are close to Pune and are easily accessible by public transport or private vehicle. 
+                </p>
+        
+        
+        
+                <h3 id="eh4" class="font">How to reach Rajmachi?</h3>
+        
+                <p class="font">
+                    There are two ways to reach the Rajmachi fort, one is from Lonavala, roughly 15 km flat walk and the other one is from Karjat, a gradual climb of around 5 km. 
+                    For beginners, it would be better to trek from Lonavala as this is a much easier path. 
+                    It will take about 5 hours of hiking to reach Udhewadi, the base of Rajmachi fort by this route. 
+                    Only SUVs can reach Udhewadi village which is situated at the base of Rajmachi Fort to avoid 15 km long trek.
+                </p>
+        
+        
+                <h3 id="eh5" class="font">How to reach Harihar?</h3>
+                <p class="font">
+                    Nearest Railway Stations: 
+                    Nashik Railway Station (56 km),Kasara Railway Station (60 km)<br>
+                    Nearest International and Domestic Airport 
+                    Chhatrapati Shivaji Maharaj International Airport, Mumbai (170 km)<br>
+                </p>
+                <p class="font">
+                    The trek to the fort starts from Nirgudpada/Kotamwadi and Harshewadi. 
+                    Trek route from Harshewadi is easier and short compared to the route from Nirgudpada. 
+                    If you start the trek from this route, it will take 1:30 hr. to reach the fort. 
+                    And the second route starts from the village of Nirgudpada or kotamwadi. 
+                    Trek from this route is a bit difficult and also full of adventure. 
+                    It will take 2 to 2:30 hr. to reach the fort.
+                    You can also start trek from Kotamwadi. You will see the Kotamwadi school. From School take a right turn to start the trek.
+                </p>
+               </div>
+               <br><br>
+        
+        
+        
+               <div id="actual5" class="container">
+                <h2 id="ah5" class="heads">1.5 Best time to visit?</h2>
+        
+                <h3 class="font">Best time to visit to Sinhgad?</h3>
+                <p class="font">The best time to visit Sinhagad Fort is during monsoon or winter season, i.e. in between the months of June and February.</p>
+        
+                <h3 class="font">Best time to visit to Raigad?</h3>
+                <p class="font">The ideal time to visit the Raigad fort is during November to March as winters are not harsh here. 
+                    The weather remains pleasant, and you will enjoy trekking or ropeway the most during winters. 
+                    Summers are hot in Raigad as the mercury reaches up to 50 degrees Celsius.</p>
+        
+                <h3 class="font">Best time to visit to Rajgad?</h3>
+                <p class="font">The best season to visit Rajgad is during the monsoons and the winter season. 
+                    Although, night trekking in summer is really fun due to cool weather.</p>
+        
+                <h3 class="font">Best time to visit to Rajmachi?</h3>
+                <p class="font">The months from June to September is the best time to visit Rajmachi since the monsoon season here greets you with water springs and greenery all over as you keep climbing the fort.</p>
+        
+                <h3 class="font">Best time to visit to Harihar?</h3>
+                <p class="font">October to February; June to August for Monsoon Trek</p>
+               </div>
+
+               
+               <div id="contact" class="end">
+                <h5 class="font">Contact us on whatsapp: 
+                    <img src="wh.jpg" alt="Contact on whatsapp" class="photos2" onclick="load()"><br>
+                </h5>
+                <h5 class="font">Contact us on instagram:
+                    <img id="con2" src="insta.jpg" alt="Contact on instagram" class="photos2" onclick="load1()"><br>
+                </h5>
+                
+                <h5 class="font">Check out our youtube channel:
+                    <img id="con3" src="YT.png" alt="Ckeck our channel at Youtube" class="photos2" onclick="load2()">
+                </h5>
+
+
+                <script>
+
+                    function load(){
+                        alert('Redirecting you to the whatsappp.....');
+                    }
+
+                    function load1(){
+                        console.log("Redirecting you to instagram......");
+                        alert('Redirecting you to instagram......');
+                        location.href = "https://www.instagram.com/invites/contact/?i=1atbwijwuwijl&utm_content=or2e70d"
+                    }
+                    function load2(){
+                        console.log("Redirecting you to Youtube......");
+                        alert('Redirecting you to youtube......');
+                        location.href = "https://youtube.com/channel/UCDmn2z8eIajLpoUFd7U689A"
+                    }
+
+                    
+                </script>
+                
+               </div>
+        
+            </main>
+
+            </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+h1.container{
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+img{
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+button.btn-danger{
+    /* To make the button look like textview apply below 2 lines */
+    /* background: none;
+    border: none; */
+    /* color: red; */
+    width: 250px;
+    text-align: left;
+    margin-left: 80px;
+}
+button.btn-dark{
+    width: 250px;
+    text-align: left;
+    margin-left: 80px;
+    
+}
+button.btn-success{
+    width: 250px;
+    text-align: left;
+    margin-left: 80px;
+
+}
+button.btn-warning{
+    width: 250px;
+    text-align: left;
+    margin-left: 80px;
+
+}
+button.btn-info{
+    width: 250px;
+    text-align: left;
+    margin-left: 80px;
+
+}
+div.container{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: auto;
+    text-shadow: 50px;
+}
+h3.font{
+    font-size: 20px;
+    color:brown;
+    font-weight: bold;
+    
+}
+marquee.font{
+    font-size: 20px;
+    color:coral;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.main{
+    border: solid 7px rgb(239, 10, 10);
+}
+h5.font{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: wheat;
+}
+div.end{
+    background-color: black;
+    border: solid 4px yellow;
+    height: 400px;
+}
+div.container{
+    margin-top: 30px;
+}
